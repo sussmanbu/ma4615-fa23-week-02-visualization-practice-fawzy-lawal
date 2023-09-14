@@ -1,7 +1,7 @@
 ---
 title: "Week 02: COVID Visualization Activity"
 date: "September, 11 2023"
-author: "**`[[`**Your Name**`]]`**"
+author: "Fawzy Lawal"
 ---
 
 Today, we'll be working with a data set related to COVID.
@@ -36,6 +36,14 @@ covid_data_count |>
 ```
 
 1. Write code for a plot and describe what you observe?
+
+```{r}
+covid_data_count |>
+  ggplot(aes(x = date, y = Cases, color = race)) + geom_line()
+```
 2. Are there any conclusions you can draw?
+# The cases and date have a direct log relationship
 3. What were you not able to do due to not having the R knowledge?
+# I wanted to try to frame the plot in a way that put more of an emphasis on the different races affected so I could see better the discrepancy between races affected.
 4. What other data would be useful to better understand this data?
+# A comparison for states
